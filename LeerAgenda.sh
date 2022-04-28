@@ -1,10 +1,16 @@
 # Leer Agenda Script
 FILE=/home/d.lopez/SO/scripts/Agenda/asuntos.txt
+
+now=$(date '+%F')
 if [ -f "$FILE" ]; then
 	while IFS= read -r line
 	do
 		if [ "$line" != "" ]; then
-			echo "$line"
+			fecha=$(echo "$line" | cut -c1-10)
+			fec=$(date -d "$fecha" '+%F')
+			if [[ $fec > $now ]]; then
+				echo "$line"
+			fi
 		else
 			echo "No hay más asuntos asuntos"
 		fi

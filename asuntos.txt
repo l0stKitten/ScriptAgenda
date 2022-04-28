@@ -1,2 +1,4 @@
 2022-04-29 - Lectura de Fundamentos de Diseño
-2022-05-01 - Ejercicios SQL BD
+2022-05-01 - Ejercicios SQL BD 
+2022-04-27 - Scripts Shell
+2021-04-28 - Tarea del año pasado
